@@ -20,27 +20,6 @@
             <button onclick="pickComputerMove(); playGame('SCISSORS');" type="button">
                 <img src="images-html-files/scissors-emoji.png" class="move-icon" />
             </button>
-
-            <script>
-                const rockButton = document.querySelector("[onclick=\"pickComputerMove(); playGame('ROCK');\"]");
-                const paperButton = document.querySelector("[onclick=\"pickComputerMove(); playGame('PAPER');\"]");
-                const scissorsButton = document.querySelector("[onclick=\"pickComputerMove(); playGame('SCISSORS');\"]");
-
-                rockButton.addEventListener("click", function() {
-                    pickComputerMove();
-                    playGame("ROCK");
-                });
-
-                paperButton.addEventListener("click", function() {
-                    pickComputerMove();
-                    playGame("PAPER");
-                });
-
-                scissorsButton.addEventListener("click", function() {
-                    pickComputerMove();
-                    playGame("SCISSORS");
-                });
-            </script>
         </div>
 
         <button onclick="resetScore();" class="reset-button" type="button">
